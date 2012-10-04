@@ -1,0 +1,408 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (Taiwan) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_TRADITIONAL
+#pragma code_page(950)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 1\r\n"
+    "#pragma code_page(950)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\sword.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.cht\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\sword.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "關於 sword"
+FONT 9, "新細明體"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "sword Version 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "確定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SWORD_DIALOG DIALOGEX 0, 0, 619, 277
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Sword - z"
+FONT 9, "Segoe UI Symbol"
+BEGIN
+    PUSHBUTTON      "確定",IDOK,495,195,55,14
+    PUSHBUTTON      "取消",IDCANCEL,555,195,55,14
+    PUSHBUTTON      "量測",IDC_BUTTON_MSR,555,155,55,35
+    PUSHBUTTON      "0-Cal",IDC_BUTTON_CAL0,495,155,55,35
+    CONTROL         "",IDC_CACONTROL1,"{1F2F52A5-CE61-45F1-B737-75A56ED77422}",
+                    WS_TABSTOP,480,20,116,25
+    CONTROL         "",IDC_XYCONTROL1,"{EF009364-CDD3-43F0-BE96-E6A920B29D60}",
+                    WS_TABSTOP,15,15,135,120
+    RTEXT           "x:",IDC_STATIC,345,55,8,8
+    RTEXT           "y:",IDC_STATIC,345,65,8,8
+    RTEXT           "Lv:",IDC_STATIC,340,75,12,8
+    RTEXT           "T:",IDC_STATIC,445,55,8,8
+    RTEXT           "Δuv:",IDC_STATIC,435,65,17,8
+    RTEXT           "0",IDC_STATIC_SX,355,55,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_SY,355,65,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_Lv,355,75,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_T,455,55,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_DUV,455,65,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "00000",IDC_STATIC_CATYPE,250,65,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetCAType( );",IDC_STATIC,170,65,48,8
+    LTEXT           "GetDisplayProbe( );",IDC_STATIC,170,15,65,8
+    CTEXT           "00000",IDC_STATIC_CA_DISPROBE,250,15,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "GetSyncMode( );",IDC_STATIC,170,25,57,8
+    CTEXT           "00000",IDC_STATIC_CA_SYNCMODE,250,25,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "GetDisplayMode( );",IDC_STATIC,170,35,65,8
+    CTEXT           "00000",IDC_STATIC_CA_DISMODE,250,35,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetDisplayDigits( );",IDC_STATIC,170,45,65,8
+    CTEXT           "00000",IDC_STATIC_CA_DISDIGITS,250,45,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "GetAveragingMode( );",IDC_STATIC,170,55,73,8
+    CTEXT           "00000",IDC_STATIC_CA_AVGMODE,250,55,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetCAVersion( );",IDC_STATIC,170,75,57,8
+    CTEXT           "00000",IDC_STATIC_CA_CAVER,250,75,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetNumber( );",IDC_STATIC,170,85,48,8
+    CTEXT           "00000",IDC_STATIC_CA_NUM,250,85,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetPortID( );",IDC_STATIC,170,95,44,8
+    CTEXT           "00000",IDC_STATIC_CA_PORTID,250,95,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetID( );",IDC_STATIC,170,105,32,8
+    CTEXT           "00000",IDC_STATIC_CA_ID,250,105,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetCalStandard( );",IDC_STATIC,170,115,63,8
+    CTEXT           "00000",IDC_STATIC_CA_CALSTD,250,115,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetCount( );",IDC_STATIC,10,195,42,8
+    CTEXT           "00000",IDC_STATIC_PROBES_COUNT,80,195,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "X:",IDC_STATIC,540,55,8,8
+    RTEXT           "Y:",IDC_STATIC,540,65,8,8
+    RTEXT           "Z:",IDC_STATIC,540,75,8,8
+    RTEXT           "FlckrJEITA:",IDC_STATIC,510,85,39,8
+    RTEXT           "0",IDC_STATIC_X,550,55,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_Y,550,65,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_Z,550,75,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_FLCKRJEITA,550,85,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "GetID( );",IDC_STATIC,345,15,30,8
+    CTEXT           "00000",IDC_STATIC_PROBE_ID,400,15,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetSerialNO( );",IDC_STATIC,345,25,51,8
+    CTEXT           "00000",IDC_STATIC_PROBE_SERNO,400,25,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "R:",IDC_STATIC,495,55,8,8
+    RTEXT           "G:",IDC_STATIC,495,65,8,8
+    RTEXT           "B:",IDC_STATIC,495,75,8,8
+    RTEXT           "0",IDC_STATIC_R,505,55,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_G,505,65,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_B,505,75,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "GetNumber( );",IDC_STATIC,345,35,48,8
+    CTEXT           "00000",IDC_STATIC_PROB_NUM,400,35,69,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "DEUser:",IDC_STATIC,410,90,23,8
+    RTEXT           "UsUser:",IDC_STATIC,410,100,23,8
+    RTEXT           "VsUser:",IDC_STATIC,410,110,23,8
+    RTEXT           "LsUser:",IDC_STATIC,410,120,23,8
+    RTEXT           "0",IDC_STATIC_DEUSER,435,90,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_USUSER,435,100,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_VSUSER,435,110,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_LSUSER,435,120,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "u':",IDC_STATIC,390,55,8,8
+    RTEXT           "v':",IDC_STATIC,390,65,8,8
+    RTEXT           "0",IDC_STATIC_UD,401,55,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_UV,401,65,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "FlckrFMA:",IDC_STATIC,510,95,38,8
+    RTEXT           "0",IDC_STATIC_FLCKRFMA,550,95,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "Rd:",IDC_STATIC,340,90,20,8
+    RTEXT           "Rad:",IDC_STATIC,340,100,20,8
+    RTEXT           "Rfma:",IDC_STATIC,340,110,20,8
+    RTEXT           "Rjeita:",IDC_STATIC,340,120,20,8
+    RTEXT           "0",IDC_STATIC_RD,365,90,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_RAD,365,100,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_RFMA,365,110,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    RTEXT           "0",IDC_STATIC_RJEITA,365,120,31,8,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "GetChannelNO( );",IDC_STATIC,340,181,59,8
+    CTEXT           "00000",IDC_STATIC_MEM_CHNO,410,181,70,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetChannelID( );",IDC_STATIC,340,171,57,8
+    CTEXT           "00000",IDC_STATIC_MEM_CHID,410,171,70,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetTypeNO( );",IDC_STATIC,10,160,48,8
+    CTEXT           "00000",IDC_STATIC_PROBEINFO_TYPENO,80,160,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "GetTypeName( );",IDC_STATIC,10,170,57,8
+    CTEXT           "00000",IDC_STATIC_PROBINFO_TYPENAME,80,170,69,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    GROUPBOX        "Class：ICa",IDC_STATIC,165,5,165,265
+    GROUPBOX        "Class：IProbe",IDC_STATIC,335,5,270,130
+    GROUPBOX        "CIE 1931",IDC_STATIC,5,5,155,140
+    GROUPBOX        "Class：IProbeInfo",IDC_STATIC,5,150,155,35
+    GROUPBOX        "Class：IProbes",IDC_STATIC,5,185,155,25
+    GROUPBOX        "Class：IMemory",IDC_STATIC,335,140,150,85
+    LTEXT           "GetReferenceColor(strID, sRclr1, sRclr2, sRclr3)",
+                    IDC_STATIC,340,150,140,8
+    RTEXT           "Static",IDC_STATIC_REFSX,340,161,45,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_REFSY,388,161,45,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_REFLV,434,161,45,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_ANALOG_RNGE1,175,235,70,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_ANALOG_RNGE2,250,235,70,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_ANALOG_RANGE_FLK,250,255,70,8,
+                    SS_SUNKEN
+    LTEXT           "GetAnalogRange(sRange1, sRange2);",IDC_STATIC,170,225,
+                    112,8
+    LTEXT           "GetFMAAnalogRange(sRange);",IDC_STATIC,170,245,94,8
+    GROUPBOX        "顯示特性 校正相關函數",IDC_STATIC,170,135,155,45
+    LTEXT           "SetAnalyzerCalMode()",IDC_STATIC,175,145,68,8
+    LTEXT           "SetAnalyzerCalColor(long lclr)",IDC_STATIC,175,155,91,8
+    LTEXT           "Enter()",IDC_STATIC,175,165,21,8
+    GROUPBOX        "arbitrary校正相關函數",IDC_STATIC,170,180,155,40
+    LTEXT           "SetLvxyCalMode()",IDC_STATIC,175,190,55,8
+    LTEXT           "ResetLvxyCalMode()",IDC_STATIC,175,200,62,8
+    LTEXT           "SetLvxyCalData(lclr, sx, sy, sLv)",IDC_STATIC,175,210,
+                    92,8
+    LTEXT           "GetMemoryStatus(lNumber,\n                LCProbSNO, lRProbeSNO, lCalMode)",
+                    IDC_STATIC,340,191,140,15
+    RTEXT           "Static",IDC_STATIC_CAL_PROB_SN,405,211,35,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_REF_PROB_SN,365,211,35,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "Static",IDC_STATIC_CALMODE,445,211,35,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "GetBrightnessUnit();",IDC_STATIC,170,125,62,8
+    CTEXT           "00000",IDC_STATIC_CA_BRIG_UNIT,250,125,70,8,
+                    SS_CENTERIMAGE | SS_SUNKEN
+    RTEXT           "0",IDC_STATIC_FREQUCNCY,550,115,30,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    RTEXT           "GetSpectrum(lFrequency);",IDC_STATIC,480,105,80,8
+    RTEXT           "0",IDC_STATIC_FLCKRELEM,480,115,65,8,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "sword MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "sword\0"
+            VALUE "LegalCopyright", "Copyright (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "sword.EXE\0"
+            VALUE "ProductName", "sword Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x404, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SWORD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 612
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SWORD_DIALOG DLGINIT
+BEGIN
+    IDC_CACONTROL1, 0x376, 76, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0048, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x14fb, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0xffe0, 
+0xffff, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x04dc, 0x0000, 
+    IDC_XYCONTROL1, 0x376, 76, 0
+0x0000, 0x0000, 0xb293, 0x0000, 0x0048, 0x0000, 0x0003, 0x0008, 0xf20b, 
+0x4757, 0x0020, 0x0000, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 
+0x0074, 0x0078, 0x1864, 0x0000, 0x0003, 0x0008, 0xf20a, 0x4757, 0xffe0, 
+0xffff, 0x005f, 0x0065, 0x0078, 0x0074, 0x0065, 0x006e, 0x0074, 0x0079, 
+0x1741, 0x0000, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失敗。 請確定 OLE 程式庫是正確版本。"
+    IDS_ABOUTBOX            "關於 sword(&A)..."
+END
+
+#endif    // Chinese (Taiwan) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHT)
+#ifdef _WIN32
+LANGUAGE 4, 1
+#pragma code_page(950)
+#endif //_WIN32
+#include "res\sword.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.cht\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
